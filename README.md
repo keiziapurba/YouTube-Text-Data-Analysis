@@ -55,7 +55,7 @@
 
 
 ### **- Collect Entire Data of YouTube**
-- In this step we read 10 csv files to see YouTube data from others country and merge it into one dataframe for further analysis.
+- In this step we read 10 csv files to see YouTube data from other country and merge it into one dataframe for further analysis.
 <img width="1001" alt="Screen Shot 2022-03-11 at 01 53 59" src="https://user-images.githubusercontent.com/91368463/157734770-6a509864-f3e5-461d-82ec-cda2317a8463.png">
 
 
