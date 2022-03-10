@@ -96,5 +96,5 @@
 - Check again if total punctuation REALLY affecting views with correlation.
 <img width="358" alt="Screen Shot 2022-03-11 at 02 22 38" src="https://user-images.githubusercontent.com/91368463/157739022-e77e58b9-c681-4b81-ab18-6b87486b12aa.png">
 
-- After checking with correlation, we can conclude that the number of punctuation doesn't really affectting views, because the correlation is weak, only 6.5%.
+- After checking with correlation, we can conclude that the number of punctuation doesn't really affecting views, because the correlation is weak, only 6.5%.
 
