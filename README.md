@@ -15,7 +15,7 @@
     - [Find Out Whether Audience is Engaged or Not](#Find-Out-Whether-Audience-is-Engaged-or-Not)
     - [Which Channels Have the Largest Number of Trending Videos?](#Which-Channels-Have-the-Largest-Number-of-Trending-Videos?)
     - [Does Punctuations in Title and Tags Have Any Relation With Views, Likes, Dislikes Comments?](#Does-Punctuations-in-Title-and-Tags-Have-Any-Relation-With-Views,-Likes,-Dislikes-Comments?)
-    - [Business Insight & Recommendation](#business-insight-&-recommendation)
+    - [Insights](#insights)
 
 ---
 
@@ -41,9 +41,10 @@
 
 ### **- Wordcloud Analysis**
 - Install wordcloud package, then import WordCloud and STOPWORDS. We want to see any positive and negative words that contains in comments text.
-- Make 2 variables, one with polarity = 1, which means positive and other with polarity = -1, which means negative.
+- Make 2 variables, one with polarity = 1, which means positive and other with polarity = -1, which means negative. We store all the positive words in variable with polarity = 1 and all negative words in variable with polarity = -1.
 <img width="615" alt="Screen Shot 2022-03-11 at 01 45 34" src="https://user-images.githubusercontent.com/91368463/157733349-813e5dca-8c3e-452c-a2c7-bbb61f504999.png">
 
+- Based on the visualization, the most used positive words in Youtube are best, perfect, awesome, beautiful, etc. and the most used negative words in Youtube are worst, terrible, disgusting, boring, awful, etc.
 
 <img width="608" alt="Screen Shot 2022-03-11 at 01 45 15" src="https://user-images.githubusercontent.com/91368463/157733415-5d548481-d108-47a3-9dd7-19ce9bd23cfd.png">
 
@@ -58,6 +59,13 @@
 ### **- Collect Entire Data of YouTube**
 - In this step we read 10 csv files to see YouTube data from other country and merge it into one dataframe for further analysis.
 <img width="1001" alt="Screen Shot 2022-03-11 at 01 53 59" src="https://user-images.githubusercontent.com/91368463/157734770-6a509864-f3e5-461d-82ec-cda2317a8463.png">
+
+- Dataset have total data points: 375942 and total columns: 17
+<img width="458" alt="Screen Shot 2022-03-11 at 13 12 51" src="https://user-images.githubusercontent.com/91368463/157812802-aef490eb-9cd1-4d51-a921-77ca9e67b621.png">
+
+- Dataset have 19478 missing values in description column, so we can handle that with dropna.
+<img width="286" alt="Screen Shot 2022-03-11 at 13 14 44" src="https://user-images.githubusercontent.com/91368463/157812895-8068e25f-bb08-455c-baf3-dd58d308665c.png">
+
 
 
 ### **- Which Category Has the Maximum Likes?**
@@ -74,8 +82,9 @@
 - Visualize with scatterplot to see if views is affecting likes or not
 <img width="447" alt="Screen Shot 2022-03-11 at 02 03 41" src="https://user-images.githubusercontent.com/91368463/157736227-0eff3211-fa67-41c2-9374-48ddad05a49d.png">
 
-- We can use heatmap to see correlation between views, likes and dislikes. If the correlation >0.7, it means features have high correlation. In this heatmap we can see that likes and views have high correlation. This means those features might affecting each other.
-<img width="968" alt="Screen Shot 2022-03-11 at 02 06 26" src="https://user-images.githubusercontent.com/91368463/157736867-708aac3a-e88b-482a-9b01-75f2ed9646d7.png">
+- We can use heatmap to see correlation between views, likes and dislikes. If the correlation >0.7, it means features have high correlation. In this heatmap we can see that likes and views have high correlation (0.78). This means those features might affecting each other.
+<img width="358" alt="Screen Shot 2022-03-11 at 13 15 56" src="https://user-images.githubusercontent.com/91368463/157813050-d752cf45-98a0-4ecc-8bbd-a8227ffd7d70.png">
+
 
 
 
@@ -95,7 +104,21 @@
 <img width="731" alt="Screen Shot 2022-03-11 at 02 20 28" src="https://user-images.githubusercontent.com/91368463/157738692-91bf29b3-ee3a-4313-945c-c33e5ac6211c.png">
 
 - Check again if total punctuation REALLY affecting views with correlation.
-<img width="358" alt="Screen Shot 2022-03-11 at 02 22 38" src="https://user-images.githubusercontent.com/91368463/157739022-e77e58b9-c681-4b81-ab18-6b87486b12aa.png">
+<img width="370" alt="Screen Shot 2022-03-11 at 13 08 11" src="https://user-images.githubusercontent.com/91368463/157812192-3e32d3d7-33da-4798-b707-0d3c9a5bd0e8.png">
 
-- After checking with correlation, we can conclude that the number of punctuation doesn't really affecting views, because the correlation is weak, only 6.5%.
+
+- After checking with correlation, we can conclude that the number of punctuation doesn't really affecting views, because the correlation is weak, only 6.3%.
+
+### **- Insights**
+From this analysis we can conclude some points:
+- The most popular positive words in Youtube are best, perfect, awesome, beautiful, etc. and for negative words are worst, terrible, disgusting, boring, awful, etc.
+- The most popular emoji that have been used in YouTube is 😂, with total: 36:987K followed by 😍 with total: 33.453K, and ❤ with total: 31.119K.
+- Video category that has maximum like is music.
+- Based on data distribution in scatterplot, video views somehow affected by likes and those features also have high correlation, at 0.78. But dislikes didn't really affected by how many views that videos have, because those features have weak correlation, at 0.47.
+- The amount of punctuation does'nt affect views but video that have total 3 punctuations in its title have the most views (followed by 2 punctuations) compare other amount of punctuations.
+
+
+
+
+
 
