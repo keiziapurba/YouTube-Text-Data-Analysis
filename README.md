@@ -112,7 +112,7 @@
 ### **- Insights**
 From this analysis we can conclude some points:
 - The most popular positive words in Youtube are best, perfect, awesome, beautiful, etc. and for negative words are worst, terrible, disgusting, boring, awful, etc.
-- The most popular emoji that have been used in YouTube is 😂, with total: 36:987K followed by 😍 with total: 33.453K, and ❤ with total: 31.119K.
+- The most popular emoji that have been used in YouTube is 😂, with total: 36:987K followed by 😍 with total: 33.453K, and 🖤 with total: 31.119K.
 - Video category that has maximum like is music.
 - Based on data distribution in scatterplot, video views somehow affected by likes and those features also have high correlation, at 0.78. But dislikes didn't really affected by how many views that videos have, because those features have weak correlation, at 0.47.
 - The amount of punctuation doesn't give crucial affect views, because it has weak correlation: 0.063 (only 6.3%), but video that have total 3 punctuations in its title have the most views (followed by 2 punctuations) compare other amount of punctuations.
