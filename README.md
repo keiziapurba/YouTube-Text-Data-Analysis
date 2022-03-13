@@ -1,6 +1,6 @@
-# Youtube-Analysis
+# YouTube Text Data Analysis
 
-### A YouTube analysis case study that contains sentiment analysis, emoji analysis, likes vs views analysis, and trending videos text on YouTube
+### A YouTube text data analysis case study that contains sentiment analysis, emoji analysis, likes vs views analysis, and trending videos text on YouTube
 ---
 
 ## Table of Content
