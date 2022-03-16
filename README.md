@@ -34,7 +34,7 @@
 ## Project Outline
 
 ### **- Sentiment Analysis**
-- First, install necessary package in this case use TextBlob to see the sentiment. To perform Sentiment Analysis, there are 2 key points: Polarity and Subjectivity. Here we focus on polarity. If polarity: +1 that means we have high polarity and if we don't have any sentiment, it carries subject, that's what subjectivity is.
+- First, install necessary package in this case use TextBlob to see the sentiment. To perform Sentiment Analysis, there are 2 key points: Polarity and Subjectivity. Here we focus on polarity. If polarity: +1 that means we have high polarity and if we don't have any sentiment, it carries subject. Subjectivity quantifies the amount of personal opinion and factual information contained in the text. The higher subjectivity means that the text contains personal opinion rather than factual information.
 - In this step, we want to see each comment text polarity and then make polarity columns in the dataset.
 <img width="606" alt="Screen Shot 2022-03-11 at 01 36 41" src="https://user-images.githubusercontent.com/91368463/157731958-daaa820a-093f-4c21-a2a0-e7c59baa4c85.png">
 
